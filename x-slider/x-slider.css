@@ -1,0 +1,83 @@
+.x-slider{
+	display: block;
+	width: 95%;
+	height: 400px;
+	margin: 10px auto;
+	position: relative;
+}
+.x-slider .nav-btn{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 10;
+}
+.x-slider .nav-btn .xbtn{
+	display: inline-block;
+	margin: 3px;
+	height: 12px;
+	width: 12px;
+	background: white;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	cursor: pointer;
+	padding: 0 !important;
+}
+.x-slider .nav-btn .xbtn:hover{
+	background: green;
+}
+.x-slider .nav-btn .xbtn.active{
+	background: green;
+}
+.x-slider .nav-btn .xbtn.active:hover{
+	background: green;
+}
+.x-slider .x-btn{
+	
+}
+.x-slider .x-btn .act{
+	position: absolute;
+	z-index: 11;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 50px;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+	background: rgba(255,255,255,.5);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+.x-slider .x-btn .act:hover{
+	background: rgba(0,0,0,.5);
+}
+.x-slider .x-btn .act.next{
+	top: 45%; right: 10px;
+}
+.x-slider .x-btn .act.prev{
+	top: 45%; left: 10px;
+}
+.x-slider .slider{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.x-slider .slider .x-item{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+.x-slider .slider .x-item.current{display: block;}
+.x-slider .slider .x-item img{
+	width: 100%;
+}
